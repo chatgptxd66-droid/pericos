@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo a los Pericos 💚✨</title>
+
+    <!-- Fuente kawaii -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffccf9, #c7f5ff, #d8ffd2, #ffe8a3);
+            animation: fondo 6s infinite alternate;
+        }
+
+        @keyframes fondo {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(1.15); }
+        }
+
+        /* PORTADA */
+        .portada {
+            height: 70vh;
+            background: url('portada.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 3px 3px 12px #ff69b4;
+            animation: brillo 3s infinite alternate;
+        }
+
+        @keyframes brillo {
+            0% { filter: drop-shadow(0 0 10px #fff); }
+            100% { filter: drop-shadow(0 0 25px #ffb3e6); }
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 40px;
+            color: #ff4fa0;
+            text-shadow: 1px 1px 5px #fff;
+        }
+
+        /* Música */
+        .musica {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Secciones */
+        .seccion {
+            background: #ffffffc7;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 15px #ffb6fabb;
+            animation: aparecer 1.5s ease;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Galería */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #ffb6fa;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Botones kawaii */
+        .boton {
+            padding: 15px 25px;
+            background: #ff9ed1;
+            color: white;
+            border-radius: 25px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px #ffa3db;
+            transition: .3s;
+        }
+
+        .boton:hover {
+            background: #ff6fba;
+            box-shadow: 0 0 15px #ff4fa0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff9ed1;
+            color: white;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portada">
+        <h1>💚✨ Amo a los Pericos ✨💚</h1>
+        <p>Los más tiernos, brillantes y cute del universo</p>
+    </div>
+
+    <div class="musica">
+        <h2>🎵 Música kawaii para ver periquitos 🎵</h2>
+        <audio controls autoplay loop>
+            <source src="musica.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="seccion">
+        <h2>🐣 Periquitos Bebés</h2>
+        <p>¡Son tan tiernos que derriten el corazón! 💖</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🖼️ Galería Súper Cute</h2>
+        <div class="galeria">
+            <img src="perico1.jpg">
+            <img src="perico2.jpg">
+            <img src="perico3.jpg">
+            <img src="perico4.jpg">
+            <img src="perico5.jpg">
+            <img src="perico6.jpg">
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>✨ Opciones para ver ✨</h2>
+        <p>🌸 Pericos kawaii</p>
+        <p>🌈 Pericos aesthetic</p>
+        <p>🐣 Pericos bebés</p>
+        <p>✨ Pericos con glitter</p>
+        <p>🦜 Pericos realistas</p>
+        <br>
+        <a href="#" class="boton">Ver más 💖</a>
+    </div>
+
+    <footer>
+        © 2025 — Hecho con amor para los periquitos 💚✨
+    </footer>
+
+</body>
+</html>
